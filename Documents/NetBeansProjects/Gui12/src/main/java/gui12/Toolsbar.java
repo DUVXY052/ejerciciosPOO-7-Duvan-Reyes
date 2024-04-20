@@ -54,11 +54,21 @@ public class Toolsbar extends javax.swing.JFrame {
         btnDos.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Downloads\\icons\\Kyrise's 16x16 RPG Icon Pack - V1.2\\icons\\16x16\\key_01d.png")); // NOI18N
         btnDos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnDos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnDos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDosActionPerformed(evt);
+            }
+        });
         barraHerramientas.add(btnDos);
 
         btnTres.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Downloads\\icons\\icons toolbar\\16x16\\png\\16x16\\Linux.png")); // NOI18N
         btnTres.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnTres.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnTres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTresActionPerformed(evt);
+            }
+        });
         barraHerramientas.add(btnTres);
 
         btnCuatro.setIcon(new javax.swing.ImageIcon("C:\\Users\\USER\\Downloads\\icons\\icons toolbar\\16x16\\gif\\16x16\\Refresh.gif")); // NOI18N
@@ -98,8 +108,16 @@ public class Toolsbar extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnoActionPerformed
 
     private void btnCuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCuatroActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null,"Activaste el botón cuatro");
     }//GEN-LAST:event_btnCuatroActionPerformed
+
+    private void btnDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDosActionPerformed
+        JOptionPane.showMessageDialog(null,"Activaste el botón dos");
+    }//GEN-LAST:event_btnDosActionPerformed
+
+    private void btnTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTresActionPerformed
+        JOptionPane.showMessageDialog(null,"Activaste el botón tres");
+    }//GEN-LAST:event_btnTresActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToolBar barraHerramientas;
